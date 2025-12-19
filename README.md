@@ -1,3 +1,34 @@
-# 20252R0136DATA30400
+# Hierarchical Multi-Label Text Classification (HMTC)
 
-Final Project
+**Course:** DATA304: Big Data Analysis (Fall 2025)  
+**Project:** Final Project - Weakly Supervised HMTC  
+
+## Project Overview
+This project addresses the task of **Hierarchical Multi-Label Text Classification (HMTC)** under a weakly supervised setting. The goal is to classify Amazon product reviews into a hierarchical taxonomy (531 classes) **without using any labeled training data**.
+
+We leverage class names and a taxonomy structure to generate pseudo-labels (Silver Labels) and train a supervised classifier.
+
+### Key Methodologies
+1.  **Taxonomy Enrichment:** Enhancing class representations by combining class names with related keywords.
+2.  **Silver Label Generation:** Using **Sentence-BERT (`all-MiniLM-L6-v2`)** to compute semantic similarity between reviews and enriched class texts.
+3.  **Supervised Training:** Fine-tuning **`bert-base-uncased`** on the generated silver labels.
+4.  **Hierarchical Constraint Enforcement:** Post-processing predictions to ensure that if a child node is predicted, all its ancestor nodes are also included.
+
+---
+
+## Repository Structure
+The code assumes the following directory structure. Please ensure the `Amazon_products` dataset is placed correctly.
+
+```text
+.
+├── Amazon_products/           # Dataset directory
+│   ├── train/
+│   │   └── train_corpus.txt
+│   ├── test/
+│   │   └── test_corpus.txt
+│   ├── classes.txt
+│   ├── class_hierarchy.txt
+│   └── class_related_keywords.txt
+├── main.ipynb                 # Main execution notebook (Run this!)
+├── submission.csv             # Generated prediction file
+└── README.md                  # Project documentation
