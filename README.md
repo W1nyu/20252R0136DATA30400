@@ -9,6 +9,7 @@ This project addresses the task of **Hierarchical Multi-Label Text Classificatio
 We leverage class names and a taxonomy structure to generate pseudo-labels (Silver Labels) and train a supervised classifier.
 
 ### Key Methodologies
+
 1.  **Taxonomy Enrichment:** Enhancing class representations by combining class names with related keywords.
 2.  **Silver Label Generation:** Using **Sentence-BERT (`all-MiniLM-L6-v2`)** to compute semantic similarity between reviews and enriched class texts.
 3.  **Supervised Training:** Fine-tuning **`bert-base-uncased`** on the generated silver labels.
@@ -17,6 +18,7 @@ We leverage class names and a taxonomy structure to generate pseudo-labels (Silv
 ---
 
 ## Repository Structure
+
 The code assumes the following directory structure. Please ensure the `Amazon_products` dataset is placed correctly.
 
 ```text
@@ -38,6 +40,7 @@ The code assumes the following directory structure. Please ensure the `Amazon_pr
 ├── report.pdf                 
 └── README.md
 
+```
 
 
 ## File Structure and Environment
