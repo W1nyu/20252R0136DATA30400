@@ -33,6 +33,7 @@ The code assumes the following directory structure. Please ensure the `Amazon_pr
 │   ├── 2021.naacl-main.335.pdf
 │   ├── final_project.pdf
 │   └── LLM Usage.pdf
-├── main.ipynb                 # Main execution notebook (Run this!)
-├── submission.csv             # Generated prediction file
-└── README.md                  # Project documentation
+├── main.ipynb                 # Main execution notebook
+├── submission.csv             
+├── report.pdf                 
+└── README.md                  
