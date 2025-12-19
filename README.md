@@ -36,4 +36,22 @@ The code assumes the following directory structure. Please ensure the `Amazon_pr
 ├── main.ipynb                 # Main execution notebook
 ├── submission.csv             
 ├── report.pdf                 
-└── README.md                  
+└── README.md
+
+
+
+## File Structure and Environment
+The project was implemented on an AWS SageMaker instance. To ensure reproducibility, we organized the directory as follows:
+
+/home/sagemaker-user/project_release/
+|-- Amazon_products/
+|   |-- train/
+|   |   |-- train_corpus.txt
+|   |-- test/
+|   |   |-- test_corpus.txt
+|   |-- classes.txt
+|   |-- class_hierarchy.txt
+|   |-- class_related_keywords.txt
+|-- main.ipynb  (Core Implementation)
+|-- submission.csv
+|-- README.md
