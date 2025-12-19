@@ -29,6 +29,10 @@ The code assumes the following directory structure. Please ensure the `Amazon_pr
 │   ├── classes.txt
 │   ├── class_hierarchy.txt
 │   └── class_related_keywords.txt
+├── reference/                 # PDF files
+│   ├── 2021.naacl-main.335.pdf
+│   ├── final_project.pdf
+│   └── LLM Usage.pdf
 ├── main.ipynb                 # Main execution notebook (Run this!)
 ├── submission.csv             # Generated prediction file
 └── README.md                  # Project documentation
