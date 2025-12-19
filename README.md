@@ -46,6 +46,7 @@ The code assumes the following directory structure. Please ensure the `Amazon_pr
 ## File Structure and Environment
 The project was implemented on an AWS SageMaker instance. To ensure reproducibility, we organized the directory as follows:
 
+```text
 /home/sagemaker-user/project_release/
 |-- Amazon_products/
 |   |-- train/
@@ -58,3 +59,4 @@ The project was implemented on an AWS SageMaker instance. To ensure reproducibil
 |-- main.ipynb  (Core Implementation)
 |-- submission.csv
 |-- README.md
+```
