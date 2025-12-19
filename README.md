@@ -15,7 +15,7 @@ We leverage class names and a taxonomy structure to generate pseudo-labels (Silv
 4.  **Hierarchical Constraint Enforcement:** Post-processing predictions to ensure that if a child node is predicted, all its ancestor nodes are also included.
 
 ---
-d
+
 ## Repository Structure
 The code assumes the following directory structure. Please ensure the `Amazon_products` dataset is placed correctly.
 
